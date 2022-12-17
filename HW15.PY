@@ -1,8 +1,8 @@
 from random import randint
-a = [randint(-10,10) for _ in range(10)]
+a = [randint(0,10) for _ in range(10)]
 print(a)
  
-b = [randint(-10,10) for _ in range(10)]
+b = [randint(0,10) for _ in range(10)]
 print(b)
  
 print(len(set(a)-set(b)))
