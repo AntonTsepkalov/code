@@ -1,14 +1,3 @@
-# Hi
-
-# How_are_you
-
-# What_is_the_weather_outside_the_window
-
-# What_is_your_name
-
-# How_many_days_are_you
-
-# What_time_is_it_now
 
 
 import os
@@ -18,7 +7,7 @@ import logging
 
 
 from aiogram import Bot, Dispatcher, executor, types
-
+from decouple import config
 
 
 path = "D:\code\some_answers/"
@@ -35,7 +24,7 @@ def get_answer_from_file(filename,path):
     
 
 
-API_TOKEN = '5987878976:AAHiieP2m7mzt3dFCuUUJBKV3AQTFpRykr4'
+API_TOKEN = config('API_TOKEN')
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
