@@ -7,8 +7,6 @@ import logging
 
 
 from aiogram import Bot, Dispatcher, executor, types
-from decouple import config
-
 
 path = "D:\code\some_answers/"
 
@@ -24,13 +22,13 @@ def get_answer_from_file(filename,path):
     
 
 
-API_TOKEN = config('API_TOKEN')
+SECRET_KEY = "5987878976:AAHiieP2m7mzt3dFCuUUJBKV3AQTFpRykr4"
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 
 # Initialize bot and dispatcher
-bot = Bot(token=API_TOKEN)
+bot = Bot(token=SECRET_KEY)
 dp = Dispatcher(bot)
 
 
